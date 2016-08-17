@@ -12,6 +12,6 @@ describe('#Basic button test', () => {
       <Button/>
     );
     const buttonNode = ReactDOM.findDOMNode(button);
-    expect(buttonNode.nodeName).toEqual('BUTTONA');
+    expect(buttonNode.nodeName).toEqual('BUTTON');
   });
 })
