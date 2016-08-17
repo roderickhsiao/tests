@@ -24,11 +24,12 @@ Pros
 3. Snapshot testing https://facebook.github.io/jest/docs/tutorial-react.html#snapshot-testing
 4. Build in Jasmine (v2) which we don't need to require assertion library
 
-Cons:
+Cons
 
-1. Need to create browser enviroment if needed (e.g. jsdom)
-2. 
+1. Using `react-dom` and `react-addons-test-utils` might create some boilerplate
+2. Need to familar with native js (which is good I think :)) DOM manipulation
 
+-----
 **Enzyme**
 
 Props
@@ -38,5 +39,8 @@ Props
 Cons
 
 1. Need to integrate with `istanbul` for code coverage
-2. 
 
+-----
+** Hybrid
+
+Using `jest` as test-runner and code coverage generator, and use `enzyme` for DOM manipulation.
