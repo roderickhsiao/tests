@@ -8,3 +8,7 @@
 3. Browser support 
 4. Code coverage generate
 
+### Run test 
+
+1. Jest: `npm run jest`
+2. Enzyme: `npm run enzyme`
