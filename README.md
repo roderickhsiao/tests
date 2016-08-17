@@ -41,6 +41,6 @@ Cons
 1. Need to integrate with `istanbul` for code coverage
 
 -----
-** Hybrid
+**Hybrid**
 
 Using `jest` as test-runner and code coverage generator, and use `enzyme` for DOM manipulation.
