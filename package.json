@@ -2,7 +2,7 @@
   "dependencies": {
     "debug": "^2.0.0",
     "react": "^15.3.0",
-    "react-dom": "15.3.0"
+    "react-dom": "^15.3.0"
   },
   "author": "Roderick Hsiao",
   "private": true,
@@ -11,13 +11,13 @@
     "babel-cli": "^6.0.0",
     "babel-core": "^6.0.0",
     "babel-eslint": "^6.0.0",
-    "babel-jest": "14.1.0",
+    "babel-jest": "^18.0.0",
     "babel-plugin-syntax-decorators": "^6.0.0",
     "babel-plugin-transform-class-properties": "^6.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.0.0",
     "babel-preset-es2015": "^6.0.0",
-    "babel-preset-react": "6.11.1",
+    "babel-preset-react": "^6.11.1",
     "babel-register": "^6.0.0",
     "babel": "^6.0.0",
     "benchmark": "^2.0.0",
@@ -25,13 +25,12 @@
     "enzyme": "^2.4.1",
     "eslint-plugin-babel": "^3.1.0",
     "eslint": "^2.2.0",
-    "jest-cli": "14.1.0",
-    "jest": "^14.1.0",
+    "jest": "^18.0.0",
     "mocha": "^2.0.0",
     "nyc": "8.1.0",
     "pre-commit": "^1.0.0",
-    "react-addons-test-utils": "15.3.0",
-    "react-test-renderer": "15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-test-renderer": "^15.3.0",
     "tape": "^4.6.0"
   },
   "pre-commit": [
@@ -40,11 +39,12 @@
   "scripts": {
     "benchmark": "babel-node tests/**.js",
     "lint": "eslint .",
-    "jest": "jest . --coverage",
+    "jest": "jest --coverage",
     "enzyme": "nyc mocha **/__unit_tests__/**.js --compilers js:babel-register"
   },
   "version": "0.0.1",
   "jest": {
+    "automock": true,
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/enzyme/",
       "<rootDir>/node_modules/react/",
